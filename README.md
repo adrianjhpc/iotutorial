@@ -21,3 +21,10 @@ This contains material contributed from a number of authors and organsations, in
 * 16.30 Hands on Profiling
 * 17.30 Summary and discussion
 
+## Running
+
+* Host name is: login.archer.ac.uk
+* To submit use: qsub -R4578901 submissionscript.pbs 
+** Replace submissionscript.pbs with the sensible script
+* Do everything from the work filesystem rather than home, i.e. cd /work/d131/d131/ngioXX
+
