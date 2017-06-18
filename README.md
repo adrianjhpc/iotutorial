@@ -6,6 +6,7 @@ This contains material contributed from a number of authors and organsations, in
 * Adrian Jackson, EPCC,
 * Tomislav Šubic, ARCTUR
 * Muhammad Sarim Zafar, TU Dresden
+* Keeran Barabazon, ARM/Allinea  
 
 ## Timetable
 
