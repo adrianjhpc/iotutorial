@@ -1,0 +1,71 @@
+ Simple Parallel IO benchmark
+ ----------------------------
+ 
+ Running on  8  process(es)
+ Process grid is ( 2 ,  2 ,  2 )
+ Array size is   ( 128 ,  128 ,  128 )
+ Global size is  ( 256 ,  256 ,  256 )
+ 
+ Total amount of data =  128.  MiB
+ 
+ Clock resolution is  3.70233246945575673E-4 , usecs
+ 
+ ------
+ Serial                                                          
+ ------
+ 
+ Writing to unstriped/serial.dat                                            
+ time =  0.15859550749883056 , rate =  807.08465213583577  MiB/s
+ Deleting: unstriped/serial.dat                                            
+ Writing to striped/serial.dat                                              
+ time =  0.34635045425966382 , rate =  369.56787099819013  MiB/s
+ Deleting: striped/serial.dat                                              
+ Writing to defstriped/serial.dat                                           
+ time =  0.17950500780716538 , rate =  713.07202826065429  MiB/s
+ Deleting: defstriped/serial.dat                                           
+ 
+ ------
+ MPI-IO                                                          
+ ------
+ 
+ Writing to unstriped/mpiio.dat                                             
+ time =  0.20652169710956514 , rate =  619.78959979247441  MiB/s
+ Deleting: unstriped/mpiio.dat                                             
+ Writing to striped/mpiio.dat                                               
+ time =  0.23599344049580395 , rate =  542.38795676304358  MiB/s
+ Deleting: striped/mpiio.dat                                               
+ Writing to defstriped/mpiio.dat                                            
+ time =  0.20865216362290084 , rate =  613.46116799122046  MiB/s
+ Deleting: defstriped/mpiio.dat                                            
+ 
+ ------
+  HDF5                                                           
+ ------
+ 
+ Writing to unstriped/hdf5.dat                                              
+ time =  0.77074007946066558 , rate =  166.07414537151033  MiB/s
+ Deleting: unstriped/hdf5.dat                                              
+ Writing to striped/hdf5.dat                                                
+ time =  1.0662812788505107 , rate =  120.04337179959548  MiB/s
+ Deleting: striped/hdf5.dat                                                
+ Writing to defstriped/hdf5.dat                                             
+ time =  0.33861049520783126 , rate =  378.01545377805428  MiB/s
+ Deleting: defstriped/hdf5.dat                                             
+ 
+ ------
+ NetCDF                                                          
+ ------
+ 
+ Writing to unstriped/netcdf.dat                                            
+ time =  0.92066260287538171 , rate =  139.03030230644191  MiB/s
+ Deleting: unstriped/netcdf.dat                                            
+ Writing to striped/netcdf.dat                                              
+ time =  2.8854044817853719 , rate =  44.361198164078111  MiB/s
+ Deleting: striped/netcdf.dat                                              
+ Writing to defstriped/netcdf.dat                                           
+ time =  1.0626095654442906 , rate =  120.45816653879035  MiB/s
+ Deleting: defstriped/netcdf.dat                                           
+ 
+ --------
+ Finished
+ --------

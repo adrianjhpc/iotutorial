@@ -1,0 +1,59 @@
+ Simple Parallel IO benchmark
+ ----------------------------
+ 
+ Running on  64  process(es)
+ Process grid is ( 4 ,  4 ,  4 )
+ Array size is   ( 32 ,  32 ,  32 )
+ Global size is  ( 128 ,  128 ,  128 )
+ 
+ Total amount of data =  16.  MiB
+ 
+ Clock resolution is  3.70233246945575673E-4 , usecs
+ 
+ ------
+ Serial                                                          
+ ------
+ 
+ Writing to unstriped/serial.dat                                            
+ time =  2.18557841144502163E-2 , rate =  732.07165280432127  MiB/s
+ Writing to striped/serial.dat                                              
+ time =  0.16254095197655261 , rate =  98.436731207948654  MiB/s
+ Writing to defstriped/serial.dat                                           
+ time =  2.29132857639342546E-2 , rate =  698.28483635394457  MiB/s
+ 
+ ------
+ MPI-IO                                                          
+ ------
+ 
+ Writing to unstriped/mpiio.dat                                             
+ time =  0.16900384472683072 , rate =  94.672402428841735  MiB/s
+ Writing to striped/mpiio.dat                                               
+ time =  0.15376013284549117 , rate =  104.05818272853541  MiB/s
+ Writing to defstriped/mpiio.dat                                            
+ time =  0.1204966027289629 , rate =  132.78382657799361  MiB/s
+ 
+ ------
+  HDF5                                                           
+ ------
+ 
+ Writing to unstriped/hdf5.dat                                              
+ time =  1.0291362106800079 , rate =  15.547018785227568  MiB/s
+ Writing to striped/hdf5.dat                                                
+ time =  3.3229403726290911 , rate =  4.8150126712448023  MiB/s
+ Writing to defstriped/hdf5.dat                                             
+ time =  1.1803209285717458 , rate =  13.555635262149332  MiB/s
+ 
+ ------
+ NetCDF                                                          
+ ------
+ 
+ Writing to unstriped/netcdf.dat                                            
+ time =  1.6817591194994748 , rate =  9.5138476221029329  MiB/s
+ Writing to striped/netcdf.dat                                              
+ time =  3.7818984680343419 , rate =  4.2306794154408038  MiB/s
+ Writing to defstriped/netcdf.dat                                           
+ time =  3.2229697464499623 , rate =  4.9643655568357987  MiB/s
+ 
+ --------
+ Finished
+ --------

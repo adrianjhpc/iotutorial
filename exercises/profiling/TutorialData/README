@@ -1,0 +1,14 @@
+The files in this folder are named in the following format:
+
+benchio_{N}p_{D}_{r}.map
+benchio_{N}p_{D}_{r}.o
+
+where N is the number of processes that were used in a run, D is the length of
+the cube of data that was written in the benchmark (i.e. a value of 128
+indicates that each process wrote 128 x 128 x 128 double values), and r is the
+run number to indicate where results from multiple runs have been collected.
+
+The .map files are Allinea MAP profiles, and can be viewed using the Allinea
+MAP profiling tool. The .o files contains the output to stdout when the
+profiled runs were performed on ARCHER. These show the measured bandwidth
+values (from the profiled program).
